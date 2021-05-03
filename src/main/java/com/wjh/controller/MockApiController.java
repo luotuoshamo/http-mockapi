@@ -48,8 +48,8 @@ public class MockApiController {
 
         map.put("requestHeader", headers);
         map.put("params", params);
-        map.put("file1", file1.getName() + "," + file1.getSize());
-        map.put("file2", file2.getName() + "," + file2.getSize());
+        map.put("file1", file1 == null ? "file1 is null" : file1.getName() + "," + file1.getSize());
+        map.put("file2", file2 == null ? "file2 is null" : file2.getName() + "," + file2.getSize());
         map.put("responseBody", "post_formData-res");
         return map;
     }

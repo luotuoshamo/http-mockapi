@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>http-mockapi</title>
+    <style>
+        .note {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+<h1>使用说明</h1>
+<p>响应中包含请求信息</p>
+<table border="1">
+    <tr>
+        <th>requestType</th>
+        <th>url</th>
+        <th>note</th>
+    </tr>
+    <tr>
+        <td>get</td>
+        <td>http://47.95.192.195:8087/mock/get</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>postFormData</td>
+        <td> http://47.95.192.195:8087/mock/post_formData</td>
+        <td><span class="note">二进制参数的key是file1和file2</span></td>
+    </tr>
+    <tr>
+        <td>postFormUrlEncoded</td>
+        <td>http://127.0.0.1:8087/mock/post_formUrlEncoded</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>postRow</td>
+        <td> http://47.95.192.195:8087/mock/post_row</td>
+        <td><span class="note">需要用户自己传入content-type请求头</span></td>
+    </tr>
+</table>
+</body>
+</html>
